@@ -9,6 +9,11 @@ def step():
             print('invalid input')
     return str(z[0] + z[1])
 
+def printtable():
+    print(table['a1'], table['a2'], table['a3'])
+    print(table['b1'], table['b2'], table['b3'])
+    print(table['c1'], table['c2'], table['c3'])
+
 
 
 table = {
@@ -23,14 +28,7 @@ table = {
     'c3' : 'u',
 }
 
-print(table['a1'], table['a2'], table['a3'])
-print(table['b1'], table['b2'], table['b3'])
-print(table['c1'], table['c2'], table['c3'])
 
+printtable()
 table[step()] = 'x'
-
-print(table['a1'], table['a2'], table['a3'])
-print(table['b1'], table['b2'], table['b3'])
-print(table['c1'], table['c2'], table['c3'])
-
-
+printtable()
