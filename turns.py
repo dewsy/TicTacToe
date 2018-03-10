@@ -24,7 +24,8 @@ def printtable():
 def turn(X):
     loc = step()
     if table[loc] == 'X' or table[loc] == 'O':
-        print('You lost') #This should be changed to the game's end!
+        print('\n That field is taken! You lost!')  #Scoring should be added later!
+        quit()
     else:
         table[loc] = X
         printtable()
